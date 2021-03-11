@@ -10,6 +10,7 @@
 			<tr>
 				<th>ID</th>
 				<th>TÊN CHUYÊN MỤC</th>
+				<th>Status</th>
 				<th class="disabled-sorting text-right">HÀNH ĐỘNG</th>
 			</tr>
 		</thead>
@@ -19,7 +20,7 @@
 				<tr>
 					<td>${item.id}</td>
 					<td>${item.name}</td>
-
+					<td>${item.status}</td>
 					<td class="td-actions text-right">
 						<a href="${ctrl}/edit/${item.id}" class="btn btn-sm btn-warning" title="Detail">
 			    			<i class="fa fa-pencil"></i>

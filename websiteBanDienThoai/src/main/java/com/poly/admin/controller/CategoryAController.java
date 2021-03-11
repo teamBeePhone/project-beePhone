@@ -10,7 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.poly.dao.CategoryDAO;
-import com.poly.entity.Category;
+import com.poly.entity.CategoryEntity;
+
 
 
 @Controller
@@ -23,23 +24,23 @@ public class CategoryAController {
 	
 	@RequestMapping("index")//@RequestMapping phần riêng
 	public String index(Model model) {
-		model.addAttribute("form", new Category());
+		model.addAttribute("form", new CategoryEntity());
 		model.addAttribute("list", cdao.findAll());
 		return "admin/category/index";
 	}
 	
 	@RequestMapping("edit/{id}")
-	public String edit(Model model, @PathVariable("id") Integer id) {
+	public String edit(Model model, @PathVariable("id") Long id) {
 		model.addAttribute("form", cdao.getOne(id));
 		model.addAttribute("list", cdao.findAll());
 		return "admin/category/index";
 	}
 	
 	@RequestMapping("create")
-	public String create(Model model, @ModelAttribute("form") Category entity) {
+	public String create(Model model, @ModelAttribute("form") CategoryEntity entity) {
 		try {
 			cdao.save(entity);
-			model.addAttribute("form", new Category());
+			model.addAttribute("form", new CategoryEntity());
 			model.addAttribute("message", "Tạo mới loại hàng thành công!");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -50,7 +51,7 @@ public class CategoryAController {
 	}
 	
 	@RequestMapping("update")
-	public String update(Model model, @ModelAttribute("form") Category entity) {
+	public String update(Model model, @ModelAttribute("form") CategoryEntity entity) {
 		if(!cdao.existsById(entity.getId())) { 
 			model.addAttribute("message", "Loại hàng không tồn tại!");
 		}
@@ -63,14 +64,14 @@ public class CategoryAController {
 	}
 	
 	@RequestMapping("delete")
-	public String delete(Model model, @ModelAttribute("form") Category entity) {
-		Optional<Category> option = cdao.findById(entity.getId());
+	public String delete(Model model, @ModelAttribute("form") CategoryEntity entity) {
+		Optional<CategoryEntity> option = cdao.findById(entity.getId());
 		if(!option.isPresent()) {
 			model.addAttribute("message", "Loại hàng không tồn tại!");
 		}
 		else {
 			cdao.delete(option.get());
-			model.addAttribute("form", new Category());
+			model.addAttribute("form", new CategoryEntity());
 			model.addAttribute("message", "Xóa loại hàng thành công!");
 		}
 		model.addAttribute("list", cdao.findAll());
