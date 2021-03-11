@@ -27,7 +27,7 @@ public class AccountEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "username", unique = true, nullable = false)
+	@Column(name = "username", nullable = false)
 	private String userame;
 
 	@Column(name = "password" , nullable = false)
@@ -36,7 +36,7 @@ public class AccountEntity {
 	@Column(name = "fullname" , nullable = false)
 	private String fullname;
 
-	@Column(name = "email" , unique = true, nullable = false)
+	@Column(name = "email" ,nullable = false)
 	private String email;
 
 	@Column(name = "image")
