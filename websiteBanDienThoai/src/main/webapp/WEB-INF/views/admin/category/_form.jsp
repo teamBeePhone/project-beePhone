@@ -18,7 +18,7 @@
 	        <form:input path="id" class="form-control" readonly="true"/> <!-- id tự tăng nên để readonly -->
 	    </div>
 	    <div class="form-group">
-	        <label>TÊN LOẠI HÀNG</label>
+	        <label>TÊN LOẠI HÀNG g</label>
 	        <form:input path="name" class="form-control"/>
 	    </div>
 	    <div class="form-group">
