@@ -16,7 +16,7 @@ import com.poly.entity.CategoryEntity;
 
 
 @Controller
-@RequestMapping("admin/category") //@RequestMapping phần chung
+@RequestMapping("admin/category") //@RequestMapping phần chung g
 public class CategoryAController {
 	@Autowired
 	CategoryDAO cdao;
