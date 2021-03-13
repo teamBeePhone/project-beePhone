@@ -1,4 +1,4 @@
-<%@ page pageEncoding="utf-8"%>
+﻿<%@ page pageEncoding="utf-8"%>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%><!-- nhúng thư viện core -->
 
@@ -11,7 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BeeMobile - Sự lựa chọn tin cậy</title>
 
-<!-- Font awesome -->
+<!-- Font awesome e -->
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
 	integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
