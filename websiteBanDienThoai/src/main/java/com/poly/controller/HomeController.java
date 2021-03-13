@@ -5,12 +5,76 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+	//*******customer**********///
+	@RequestMapping("/home/index")//trangchu
+	public String indexcustomer() {
+		return "home/index";
+	}
+	
+	@RequestMapping("/home/about")//gioithieu
+	public String about() {
+		return "home/about";
+	}
+	
+//	@RequestMapping("/home/product")//sanpham
+//	public String product() {
+//		return "home/product";
+//	}
+	
+	@RequestMapping("/home/product-detail")//chi tiet sanpham
+	public String productDetail() {
+		return "home/product-detail";
+	}
+	
+	@RequestMapping("/home/news")//tintuc
+	public String news() {
+		return "home/news";
+	}
+	
+	@RequestMapping("/home/new-detail")//new sanpham
+	public String newDetail() {
+		return "home/new-detail";
+	}
+	
+	@RequestMapping("/home/policy")//chính sach
+	public String policy() {
+		return "home/policy";
+	}
+	
+	@RequestMapping("/home/contact")//lienhe
+	public String contact() {
+		return "home/contact";
+	}
+	
+	@RequestMapping("/home/login")//dang nhap 
+	public String login() {
+		return "home/login";
+	}
+	
+	@RequestMapping("/home/registration")//dang ky 
+	public String registration() {
+		return "home/registration";
+	}
+	
+	
+	@RequestMapping("/home/checkout")//checkout thanh toán
+	public String checkout() {
+		return "home/checkout";
+	}
+	
+	@RequestMapping("/home/hdanDatHang")//
+	public String hddathang() {
+		return "home/hdanDatHang";
+	}
+	
+	@RequestMapping("/home/cart")//cart chitietdathang
+	public String cart() {
+		return "home/cart";
+	}
 	
 	
 	
-	
-	
-	
+
 	
 	
 	//*******admin**********///
@@ -38,11 +102,11 @@ public class HomeController {
 	}
 	
 	//quản lý sản phẩm
-	@RequestMapping("/admin/product/index")
-	public String listProduct() {
-		return "admin/product/index";
-	}
-		
+//	@RequestMapping("/admin/product/index")
+//	public String listProduct() {
+//		return "admin/product/index";
+//	}
+//		
 	//dơn hàng
 	@RequestMapping("/admin/order/index")
 	public String order() {
@@ -54,6 +118,12 @@ public class HomeController {
 	public String category() {
 		return "admin/news/index";
 	}
+	
+	//quản lý demo
+		@RequestMapping("/admin/demo/index")
+		public String demo() {
+			return "admin/demo/index";
+		}
 	
 	
 

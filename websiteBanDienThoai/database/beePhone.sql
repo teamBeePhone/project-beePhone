@@ -19,6 +19,7 @@ insert into account (email, fullname, image, password, status, username) values 
 insert into account (email, fullname, image, password, status, username) values ('jhaycoxh@forbes.com', 'Jae Haycox', 'http://dummyimage.com/127x139.bmp/dddddd/000000', 'cgl9yEyqJ9Kr', 1, 'jhaycoxh');
 insert into account (email, fullname, image, password, status, username) values ('gstranahani@pen.io', 'Gennifer Stranahan', 'http://dummyimage.com/235x174.jpg/cc0000/ffffff', '2IJMhoiA', 1, 'gstranahani');
 insert into account (email, fullname, image, password, status, username) values ('vmulcockj@jalbum.net', 'Violette Mulcock', 'http://dummyimage.com/202x209.jpg/cc0000/ffffff', 'Gk4NyH', 1, 'vmulcockj');
+
 insert into category(name) values('APPLE');
 insert into category(name) values('SAMSUNG');
 insert into category(name) values('XIAOMI');

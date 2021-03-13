@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.poly.dao.CategoryDAO;
+
 import com.poly.entity.CategoryEntity;
 
 
@@ -30,20 +31,19 @@ public class CategoryAController {
 	}
 	
 	@RequestMapping("edit/{id}")
-	public String edit(Model model, @PathVariable("id") Long id) {
+	public String edit(Model model, @PathVariable("id") long id) {
 		model.addAttribute("form", cdao.getOne(id));
 		model.addAttribute("list", cdao.findAll());
 		return "admin/category/index";
 	}
 	
 	@RequestMapping("create")
-	public String create(Model model, @ModelAttribute("form") CategoryEntity entity) {
+	public String create(Model model, @ModelAttribute("form") CategoryEntity entity) { 
 		try {
 			cdao.save(entity);
 			model.addAttribute("form", new CategoryEntity());
 			model.addAttribute("message", "Tạo mới loại hàng thành công!");
 		} catch (Exception e) {
-			e.printStackTrace();
 			model.addAttribute("message", "Tạo mới loại hàng thất bại!");
 		}
 		model.addAttribute("list", cdao.findAll());

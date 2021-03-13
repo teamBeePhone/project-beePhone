@@ -1,6 +1,7 @@
 package com.poly.entity;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -12,6 +13,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,6 +32,7 @@ import lombok.Setter;
 public class ProductEntity {
 
 	@Id
+	@Column(name = "id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
@@ -42,7 +48,7 @@ public class ProductEntity {
 	@Column(nullable = false)
 	private Integer stock;
 
-	@Column(name = "man_hinh", nullable = false)
+	@Column(name = "man_hinh", nullable = false)//
 	private String manHinh;
 
 	@Column(name = "he_dieu_hanh", nullable = false)

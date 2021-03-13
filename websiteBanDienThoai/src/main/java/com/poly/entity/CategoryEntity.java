@@ -35,6 +35,4 @@ public class CategoryEntity {
 	@OneToMany(mappedBy = "categoryProduct")
 	private List<ProductEntity> products;
 	
-	//khaihcps10763 push
-
 }

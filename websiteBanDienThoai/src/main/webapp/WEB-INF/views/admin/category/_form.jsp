@@ -22,9 +22,9 @@
 	        <form:input path="name" class="form-control"/>
 	    </div>
 	    <div class="form-group">
-	        <label>status</label>
-	        <form:input path="status" class="form-control"/>
+	        <form:input path="status" type="hidden" class="form-control"/>
 	    </div>
+
     </div>
     <div class="panel-footer">
 	        <form:button formaction="${ctrl}/create" class="btn btn-success" title="Create" disabled="${!empty form.id}">
