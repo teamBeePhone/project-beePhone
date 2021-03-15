@@ -70,3 +70,5 @@ insert into orders (address, order_date, account_id) values ('9922 Lakeland Trai
 
 insert into order_detail(quatity, unit_price, order_id, product_id)
 new
+
+khaihcps10763
