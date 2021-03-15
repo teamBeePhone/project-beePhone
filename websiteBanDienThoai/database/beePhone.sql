@@ -69,6 +69,3 @@ insert into orders (address, order_date, account_id) values ('4 Eggendart Avenue
 insert into orders (address, order_date, account_id) values ('9922 Lakeland Trail', '2021-01-02', 11);
 
 insert into order_detail(quatity, unit_price, order_id, product_id)
-values(1, 2000000, 2,1);
-
-new
