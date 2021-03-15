@@ -70,3 +70,5 @@ insert into orders (address, order_date, account_id) values ('9922 Lakeland Trai
 
 insert into order_detail(quatity, unit_price, order_id, product_id)
 values(1, 2000000, 2,1);
+
+new
