@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+
 	//*******customer**********///
 	@RequestMapping("/home/index")//trangchu
 	public String indexcustomer() {
@@ -46,14 +47,14 @@ public class HomeController {
 		return "home/contact";
 	}
 	
-	@RequestMapping("/home/login")//dang nhap 
-	public String login() {
-		return "home/login";
-	}
+//	@RequestMapping("/account/login")//dang nhap 
+//	public String login() {
+//		return "account/login";
+//	}
 	
-	@RequestMapping("/home/registration")//dang ky 
+	@RequestMapping("/account/registration")//dang ky 
 	public String registration() {
-		return "home/registration";
+		return "account/registration";
 	}
 	
 	
@@ -71,12 +72,7 @@ public class HomeController {
 	public String cart() {
 		return "home/cart";
 	}
-	
-	
-	
 
-	
-	
 	//*******admin**********///
 	@RequestMapping("/admin/layout")
 	public String index() {
@@ -108,10 +104,10 @@ public class HomeController {
 //	}
 //		
 	//dơn hàng
-	@RequestMapping("/admin/order/index")
-	public String order() {
-		return "admin/order/index";
-	}
+//	@RequestMapping("/admin/order/index")
+//	public String order() {
+//		return "admin/order/index";
+//	}
 		
 	//quản lý bản tin
 	@RequestMapping("/admin/news/index")

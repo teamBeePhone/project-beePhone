@@ -10,7 +10,7 @@
 			<tr>
 				<th>ID</th>
 				<th>TÊN CHUYÊN MỤC</th>
-				<th>Status</th>
+				<th>STATUS</th>
 				<th class="disabled-sorting text-right">HÀNH ĐỘNG</th>
 			</tr>
 		</thead>

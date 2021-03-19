@@ -32,8 +32,8 @@
                     <a><strong>Chào </strong>Khải</a>
                   </li>
                   <li class="hidden-xs"><a href="">Đăng xuất</a></li>
-                  <li class="hidden-xs"><a href="registration">Đăng ký</a></li>
-                  <li><a href="login">Đăng nhập</a></li>
+                  <li class="hidden-xs"><a href="/account/registration">Đăng ký</a></li>
+                  <li><a href="/account/login">Đăng nhập</a></li>
                   <!--  data-toggle="modal" data-target="#login-modal" -->
                 </ul>
               </div>
@@ -54,7 +54,7 @@
               <div class="aa-logo">
                 <!-- Text based logo -->
                 <!-- img based logo -->
-                <a href="index.html"><img src="/static/assets/images/logo1.png" alt="logo img" width="100%"></a>
+                <a href="index"><img src="/static/assets/images/logo1.png" alt="logo img" width="100%"></a>
               </div>
               <!-- / logo  -->
               <!-- Shipping service -->

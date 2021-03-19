@@ -27,15 +27,19 @@
             <div class="col-md-8 col-md-push-2">
               <div class="aa-myaccount-login">
               <h4>Đăng nhập</h4>
-               <form class="aa-login-form" name="loginform" onsubmit="validate();" action="" method="post">
+               <form class="aa-login-form" name="loginform" onsubmit="validate();" action="/account/login" method="post">
                 <label for="">Username<span>*</span></label>
-                 <input type="text" placeholder="Username" name="username">
+                 <input type="text" value="${map.id}" placeholder="Username" name="id">
                  <label for="">Mật khẩu<span>*</span></label>
-                  <input type="password" placeholder="Password" name="password">
-                  <p class="rememberme" style="display: block"><input type="checkbox" id="rememberme"> Ghi nhớ </p> 
+                  <input type="password" value="${map.password}" placeholder="Password" name="password">
+                  <p class="rememberme" style="display: block"><input type="checkbox" id="remember"> Ghi nhớ </p> 
    
-                  <p style="color:red; display:block">Thông báo lỗi
-                  </p>
+                  <p style="color:red; display:block">Thông báo lỗi: ${message}${param.message}
+                  </p> 
+                  <div class="form-group">
+		            <a href="/account/forgot">Forgot Password?</a>
+			        <a href="/account/register">Register new user?</a>
+		        </div>
                    <button type="submit" class="aa-browse-btn">Đăng nhập</button>
                       
                 </form>

@@ -44,7 +44,8 @@ public class AccountEntity {
 	@Column(name = "image")
 	private String image;
 
-	private int status;
+	@Column(name = "status", columnDefinition = "boolean default false")
+	private Boolean status;
 
 	@Column(name = "role", columnDefinition = "boolean default false")
 	private Boolean role;

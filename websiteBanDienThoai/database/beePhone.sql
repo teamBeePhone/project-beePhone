@@ -46,29 +46,96 @@ insert into new (content, start_date, end_date, image, title, account_id) values
 insert into new (content, start_date, end_date, image, title, account_id) values ('convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim', '2021-01-28', '2021-03-28', 'http://dummyimage.com/145x162.bmp/ff4444/ffffff', 'True Confession', 6);
 insert into new (content, start_date, end_date, image, title, account_id) values ('morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede', '2021-01-23', '2021-03-20', 'http://dummyimage.com/174x197.png/dddddd/000000', 'Travels with My Aunt', 14);
 
-insert into product (bo_nho_trong, camera_sau, camera_truoc, count, cpu, create_date, create_by, description, 
+insert into beephone.orders (address, amount, order_date, account_id) values ('139 Esch Junction',500, '2021-01-08', 1);//1
+insert into beephone.orders (address, amount, order_date, account_id) values ('92 Vidon Parkway',16000, '2021-01-23', 2);//2
+insert into beephone.orders (address, amount, order_date, account_id) values ('89252 Northport Plaza',1200, '2021-01-28', 3);//3
+insert into beephone.orders (address, amount, order_date, account_id) values ('0775 Dawn Hill',28000, '2021-01-07', 4);//4
+insert into beephone.orders (address, amount, order_date, account_id) values ('83715 Dovetail Place',10000, '2021-01-15', 5);//5
+insert into beephone.orders (address, amount, order_date, account_id) values ('1009 Lake View Trail',28000, '2021-01-07', 5);//6
+insert into beephone.orders (address, amount, order_date, account_id) values ('1 Center Crossing',800, '2021-01-01', 6);//7
+insert into beephone.orders (address, amount, order_date, account_id) values ('9 Continental Point',22000, '2021-01-07', 6);//8
+insert into beephone.orders (address, amount, order_date, account_id) values ('4 Little Fleur Trail',800, '2021-01-05', 7);//9
+insert into beephone.orders (address, amount, order_date, account_id) values ('6 Mitchell Junction',14000, '2021-01-28', 8);//10
+insert into beephone.orders (address, amount, order_date, account_id) values ('39 Springs Plaza',14000, '2021-01-29', 9);//11
+insert into beephone.orders (address, amount, order_date, account_id) values ('7575 Dottie Junction',16000, '2021-01-08', 9);//12
+insert into beephone.orders (address, amount, order_date, account_id) values ('2762 Prairie Rose Avenue',30000, '2021-01-05', 10);//13
+insert into beephone.orders (address, amount, order_date, account_id) values ('4 Eggendart Avenue',1800, '2021-01-26', 11);//14
+insert into beephone.orders (address, amount,order_date, account_id) values ('9922 Lakeland Trail',3200, '2021-01-02', 12);//15
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(1, 100, 1,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 200, 1,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 300, 2,3);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(1, 400, 2,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 100, 3,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 200, 3,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 300, 4,3);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 400, 4,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 5,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 200, 5,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 300, 6,3);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 400, 6,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 100, 7,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(1, 200, 7,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 300, 8,3);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 400, 8,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 9,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 200, 9,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 10,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(3, 400, 10,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 11,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(4, 300, 11,3);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 12,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(7, 200, 12,2);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(2, 100, 13,1);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(7, 400, 13,4);
+
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(9, 200, 14,2);
+insert into beephone.order_detail(quatity, unit_price, order_id, product_id) values(8, 400, 15,4);
+
+
+
+insert into beephone.product (bo_nho_trong, camera_sau, camera_truoc, count, cpu, create_date, create_by, description, 
 dung_luong_pin, he_dieu_hanh, image, man_hinh, name, ram, stock, unit_price, category_id, new_id)
-values ('32GB', '16MP', '8MB', 1,
+values ('322222GB', '16MP', '8MB', 1,
  'Snapdragon 450', '2021-02-05', 'admin', 'molestie nibhotenti cras in purus eu',
- 3500, 'Android', 'http://dummyimage.com/113x182.bmp/dddddd/000000', 'HD', 'Xiaomi Redmi 4X', '2GB', 85, 2000000,3,1);
+ 3500, 'Android', 'product-1_auto_x2.jpg', 'HD', 'Xiaomi Redmi 1X', '2GB', 875, 100,1,1);
+ 
+insert into beephone.product (bo_nho_trong, camera_sau, camera_truoc, count, cpu, create_date, create_by, description, 
+dung_luong_pin, he_dieu_hanh, image, man_hinh, name, ram, stock, unit_price, category_id, new_id)
+values ('322222GB', '16MP', '8MB', 1,
+ 'Snapdragon 450', '2021-02-05', 'admin', 'molestie nibhotenti cras in purus eu',
+ 3500, 'Android', 'product-2_auto_x2.jpg', 'HD', 'Xiaomi Redmi 2X', '2GB', 876, 200,2,2);
+ 
+ insert into beephone.product (bo_nho_trong, camera_sau, camera_truoc, count, cpu, create_date, create_by, description, 
+dung_luong_pin, he_dieu_hanh, image, man_hinh, name, ram, stock, unit_price, category_id, new_id)
+values ('322222GB', '16MP', '8MB', 1,
+ 'Snapdragon 450', '2021-02-05', 'admin', 'molestie nibhotenti cras in purus eu',
+ 3500, 'Android', 'product-3_auto_x2.jpg', 'HD', 'Xiaomi Redmi 3X', '2GB', 877, 300,3,3);
+ 
+ insert into beephone.product (bo_nho_trong, camera_sau, camera_truoc, count, cpu, create_date, create_by, description, 
+dung_luong_pin, he_dieu_hanh, image, man_hinh, name, ram, stock, unit_price, category_id, new_id)
+values ('322222GB', '16MP', '8MB', 1,
+ 'Snapdragon 450', '2021-02-05', 'admin', 'molestie nibhotenti cras in purus eu',
+ 3500, 'Android', 'product-4_auto_x2.jpg', 'HD', 'Xiaomi Redmi 4X', '2GB', 878, 400,4,4);
+ 
 
-insert into orders (address, order_date, account_id) values ('139 Esch Junction', '2021-01-08', 17);
-insert into orders (address, order_date, account_id) values ('92 Vidon Parkway', '2021-01-23', 2);
-insert into orders (address, order_date, account_id) values ('89252 Northport Plaza', '2021-01-28', 12);
-insert into orders (address, order_date, account_id) values ('0775 Dawn Hill', '2021-01-07', 5);
-insert into orders (address, order_date, account_id) values ('83715 Dovetail Place', '2021-01-15', 16);
-insert into orders (address, order_date, account_id) values ('1009 Lake View Trail', '2021-01-07', 18);
-insert into orders (address, order_date, account_id) values ('1 Center Crossing', '2021-01-01', 7);
-insert into orders (address, order_date, account_id) values ('9 Continental Point', '2021-01-07', 13);
-insert into orders (address, order_date, account_id) values ('4 Little Fleur Trail', '2021-01-05', 17);
-insert into orders (address, order_date, account_id) values ('6 Mitchell Junction', '2021-01-28', 5);
-insert into orders (address, order_date, account_id) values ('39 Springs Plaza', '2021-01-29', 10);
-insert into orders (address, order_date, account_id) values ('7575 Dottie Junction', '2021-01-08', 17);
-insert into orders (address, order_date, account_id) values ('2762 Prairie Rose Avenue', '2021-01-05', 8);
-insert into orders (address, order_date, account_id) values ('4 Eggendart Avenue', '2021-01-26', 13);
-insert into orders (address, order_date, account_id) values ('9922 Lakeland Trail', '2021-01-02', 11);
 
-insert into order_detail(quatity, unit_price, order_id, product_id)
-new
 
-khaihcps10763
+
+
+
+
+
+

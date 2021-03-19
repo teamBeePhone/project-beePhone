@@ -33,8 +33,7 @@
                                 <li>
                                     <figure>
                                         <a class="aa-product-img" href="/home/product"><img src="assets/images/hat-mac-ca.jpg" alt=""></a>
-                                        <a class="aa-add-card-btn" href=""><span class="fa fa-shopping-cart"></span>Thêm
-                                            vào giỏ hàng</a>
+                                        <a class="aa-add-card-btn" href=""><span class="fa fa-shopping-cart"></span>Thêm vào giỏ hàng</a>
                                         <figcaption>
                                             <h4 class="aa-product-title"><a href="/home/product">name</a></h4>
                                             <span class="aa-product-price">price VNĐ</span><span
@@ -57,14 +56,9 @@
                         <!-- single sidebar -->
                         <div class="aa-sidebar-widget">
                             <h3>Danh mục</h3>
-                            <c:forEach var="c" items="${cates}">
 	                            <ul class="aa-catg-nav">
-	                            	
-	                          		
 	                                    <li><a href="">${c.name}</a></li>
-									
 	                            </ul>
-                            </c:forEach>
                         </div>
                         <!-- single sidebar -->
 
